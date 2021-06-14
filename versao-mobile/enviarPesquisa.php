@@ -41,7 +41,6 @@ if ($p1 && $p2 && $p3 && $p4 && $p5 != 0){
 echo $sucesso = '
 
     <div align="center">
-        <img style="margin-top: 20px;"  src="img/logo.png" width="" height=""/>
         <h4 align="center" style="margin-top: 15px;">PESQUISA DE SATISFAÇÃO</h4>
         <img  src="img/pesquisa.jpg" width="" height=""/>
     </div>
