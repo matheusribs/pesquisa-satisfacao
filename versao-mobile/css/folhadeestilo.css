@@ -1,0 +1,101 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f9f7f9;
+  height: 800px;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+.form-check{
+    padding: 10px;
+
+}
+
+.btn-warning {
+    color: #ffffff;
+    background-color: #fd8341;
+    border-color: #fd8341;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #ffcf00;
+    border-color: #fccf03;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #80d76b;
+    border-color: #7ed966;
+}
+#escala{
+    width: 400px;
+}
+
