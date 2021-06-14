@@ -33,7 +33,6 @@ echo $html = '
 <form action="enviarPesquisa.php" method="POST">
 
     <div align="center">
-        <img style="margin-top: 20px;"  src="img/logo.png" width="" height=""/>
         <h4 align="center" style="margin-top: 15px;">PESQUISA DE SATISFAÇÃO</h4>
         <img  src="img/pesquisa.jpg" width="" height=""/>
     </div>
