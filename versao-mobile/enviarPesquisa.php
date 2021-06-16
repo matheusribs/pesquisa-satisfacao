@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="css/folhadeestilo.css" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<meta http-equiv="refresh" content="10; URL='http://127.0.0.1/pesquisa-satisfacao/pesquisa-satisfacao/versao-mobile/index.php'"/>
 </head>
 <style type="text/css">
 .btn-warning {
@@ -22,7 +23,19 @@
     background-color: #80d76b;
     border-color: #7ed966;
 }
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #f7f7f7;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
 </style>
+
 <?php
 
 $p1 = $_GET['p1'];
@@ -34,22 +47,38 @@ $p5 = $_GET['p5'];
 
 if ($p1 && $p2 && $p3 && $p4 && $p5 != 0){
 
-    
-    //$sql = 'INSERT INTO perguntas (p1,p2,p3,p4,p5) VALUES ('$p1','$p2','$p3','$p4','$p5')';
+    include 'conecta.php'
+
+    $sql = 'INSERT INTO perguntas (p1,p2,p3,p4,p5) VALUES ('$p1','$p2','$p3','$p4','$p5')';
 
 
 echo $sucesso = '
-
+    
     <div align="center">
-        <h4 align="center" style="margin-top: 15px;">PESQUISA DE SATISFAÇÃO</h4>
+        <br>
+        <img style="margin-bottom: 10px;" src="img/logo.png" width="" height=""/>
+        <h4 align="center">PESQUISA DE SATISFAÇÃO</h4>
         <img  src="img/pesquisa.jpg" width="" height=""/>
+        <div class="alert alert-success" role="alert">
+            A pesquisa foi enviada com sucesso!
+        </div>
     </div>
-
 ';
 
 }else{
 
-    echo $erro = '';
+    echo $erro = '
+    
+    <div align="center">
+        <br>
+        <img style="margin-bottom: 10px;" src="img/logo.png" width="" height=""/>
+        <h4 align="center">PESQUISA DE SATISFAÇÃO</h4>
+        <img  src="img/pesquisa.jpg" width="" height=""/>
+        <div class="alert alert-danger" role="alert">
+            Houve um problema ao enviar a pesquisa! <a href="http://127.0.0.1/pesquisa-satisfacao/pesquisa-satisfacao/versao-mobile/index.php">TENTAR NOVAMENTE</a>
+        </div>
+    </div>
+';
 
 }
 
