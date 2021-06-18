@@ -50,7 +50,6 @@ if ($p1 && $p2 && $p3 && $p4 && $p5 != 0){
     // Parte responsável por inserir dados na tabela 'perguntas' do banco.
     $strcon = mysqli_connect('127.0.0.1:3307','root','','bdpesquisa') or die('Erro ao conectar ao banco de dados');
     $sql = "INSERT INTO perguntas (p1,p2,p3,p4,p5) VALUES ('$p1','$p2','$p3','$p4','$p5')";
-    //$sql .= "(NULL, '$NomeColaborador', '$CodCromos', '$Cpf', '$SenhaColaborador', '$TipoColaborador', '$EmailColaborador', '$NivelColaborador')"; 
     mysqli_query($strcon,$sql) or die("Erro ao tentar cadastrar registro");
     mysqli_close($strcon);
 
@@ -59,7 +58,6 @@ echo $sucesso = '
     
     <div align="center">
         <br>
-        <img style="margin-bottom: 10px;" src="img/logo.png" width="" height=""/>
         <h4 align="center">PESQUISA DE SATISFAÇÃO</h4>
         <img  src="img/pesquisa.jpg" width="" height=""/>
         <div class="alert alert-success" role="alert">
@@ -74,7 +72,6 @@ echo $sucesso = '
     
     <div align="center">
         <br>
-        <img style="margin-bottom: 10px;" src="img/logo.png" width="" height=""/>
         <h4 align="center">PESQUISA DE SATISFAÇÃO</h4>
         <img  src="img/pesquisa.jpg" width="" height=""/>
         <div class="alert alert-danger" role="alert">
