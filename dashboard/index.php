@@ -61,7 +61,7 @@ body {
 
 
         <div class="col-sm-6" style="margin-top: 40px">
-            <h6>EM UMA ESCALA DE 0 A 10 QUAL A PROBABILIDADE DE VOCÊ INDICAR A GMI?</h6>
+            <h6>EM UMA ESCALA DE 0 A 10 QUAL A PROBABILIDADE DE VOCÊ INDICAR A NOSSA EMPRESA?</h6>
             <div id="chart-container">
                 <canvas id="graphCanvas5"></canvas>
             </div>
