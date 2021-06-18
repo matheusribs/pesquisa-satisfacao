@@ -96,7 +96,7 @@ echo $html = '
 
     <div class="mySlides">
         <br>
-        <h2><font color="red">EM UMA ESCALA DE 0 A 10 QUAL A PROBABILIDADE DE VOCÊ INDICAR A GMI?</font></h2>
+        <h2><font color="red">EM UMA ESCALA DE 0 A 10 QUAL A PROBABILIDADE DE VOCÊ INDICAR A NOSSA EMPRESA?</font></h2>
         <br>
         <h6>ESCOLHA A ESCALA:</h6>
         <input type="range" id="escala" value="10" onclick="capturarP5(this.value)" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
