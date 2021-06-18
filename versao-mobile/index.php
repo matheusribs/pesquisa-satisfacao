@@ -34,7 +34,8 @@ echo $html = '
 <form action="enviarPesquisa.php" method="POST">
 
     <div align="center">
-        <h4 align="center" style="margin-top: 15px;">PESQUISA DE SATISFAÇÃO</h4>
+        <br>
+        <h4 align="center">PESQUISA DE SATISFAÇÃO</h4>
         <img  src="img/pesquisa.jpg" width="" height=""/>
     </div>
 
@@ -96,11 +97,12 @@ echo $html = '
 
     <div class="mySlides">
         <br>
-        <h2><font color="red">EM UMA ESCALA DE 0 A 10 QUAL A PROBABILIDADE DE VOCÊ INDICAR A GMI?</font></h2>
+        <h2><font color="red">EM UMA ESCALA DE 0 A 10 QUAL A PROBABILIDADE DE VOCÊ INDICAR A NOSSA EMPRESA?</font></h2>
         <br>
         <h6>ESCOLHA A ESCALA:</h6>
         <input type="range" id="escala" value="10" onclick="capturarP5(this.value)" min="1" max="10" oninput="this.nextElementSibling.value = this.value">
         <output>10</output>
+        <br>
         <button style="margin-top: 20px;" class="btn btn-success btn-lg" onclick="enviarDados()" type="button">ENVIAR PESQUISA</button>
     </div>
 
@@ -147,45 +149,48 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+var p1;
+var p2;
+var p3;
+var p4;
+var p5;
+
 function capturarP1(valorP1){
 
-    var p1 = valorP1;
-    alert(p1);
+    p1 = valorP1;
 
 }
 
 function capturarP2(valorP2){
 
-    var p2 = valorP2;
-    alert(p2);
+    p2 = valorP2;
 
 }
 
 function capturarP3(valorP3){
 
-    var p3 = valorP3;
-    alert(p3);
+    p3 = valorP3;
 
 }
 
 function capturarP4(valorP4){
 
-    var p4 = valorP4;
-    alert(p4);
+    p4 = valorP4;
+
 
 }
 
 function capturarP5(valorP5){
 
-    var p5 = valorP5;
-    alert(p5);
+    p5 = valorP5;
+
 
 }
 
 function enviarDados() {
 
-    var x = 5;
-    window.location.href = "enviarPesquisa.php?p1="+x+"";
+    var p5 = document.querySelector("#escala").value;
+    window.location.href = "enviarPesquisa.php?p1="+p1+"&p2="+p2+"&p3="+p3+"&p4="+p4+"&p5="+p5+"";
     
 }
 
