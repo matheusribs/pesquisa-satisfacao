@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$conn = mysqli_connect("127.0.0.1:3307","root","","bdpesquisa");
+$conn = mysqli_connect("127.0.0.1:3306","root","","bdpesquisa");
 
 $sqlQuery = "SELECT sum(p5 = 1) as p1, 
                     sum(p5 = 2) as p2, 

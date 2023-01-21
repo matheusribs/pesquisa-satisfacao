@@ -1,9 +1,9 @@
 <?php
 header('Content-Type: application/json');
 
-$conn = mysqli_connect("127.0.0.1:3307","root","","bdpesquisa");
+$conn = mysqli_connect("127.0.0.1:3306","root","","bdpesquisa");
 
-$sqlQuery = "SELECT sum(p1 = 1) as p1, sum(p1 = 2) as p2, sum(p1 = 3) as p3, sum(p1 = 4) as p4, sum(p1 = 5) as p5 from perguntas";
+$sqlQuery = "SELECT sum(p1) as p1, sum(p2) as p2, sum(p3) as p3, sum(p4) as p4, sum(p5) as p5 from clientes";
 
 $result = mysqli_query($conn,$sqlQuery);
 

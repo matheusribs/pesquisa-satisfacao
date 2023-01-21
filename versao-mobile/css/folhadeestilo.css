@@ -95,7 +95,7 @@ q {font-style: italic;}
     background-color: #80d76b;
     border-color: #7ed966;
 }
-#escala{
+#escala1, #escala2, #escala3{
     width: 400px;
 }
 

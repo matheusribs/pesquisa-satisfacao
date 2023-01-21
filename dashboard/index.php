@@ -32,27 +32,27 @@ body {
     <div class="row">
 
         <div class="col-sm-6">
-            <h6>SATISFAÇÃO COM RELAÇÃO AO NOSSO ATENDIMENTO?</h6>
+            <h6>Em uma escala de 0 a 10, como você avalia nossa comida?</h6>
             <div id="chart-container">
                 <canvas id="graphCanvas"></canvas>
             </div>
         </div>
 
         <div class="col-sm-6">
-            <h6>REPASSE DE INFORMAÇÕES SOBRE PRODUTOS?</h6>
+            <h6>Em uma escala de 0 a 10, como você avalia nosso atendimento?</h6>
             <div id="chart-container">
                 <canvas id="graphCanvas2"></canvas>
             </div>
         </div>
 
         <div class="col-sm-6" style="margin-top: 40px">
-            <h6>PRAZO DE ENTREGA DOS PRODUTOS?</h6>
+            <h6>Em uma escala de 0 a 10, como você avalia nosso ambiente?</h6>
             <div id="chart-container">
                 <canvas id="graphCanvas3"></canvas>
             </div>
         </div>
 
-        <div class="col-sm-6" style="margin-top: 40px">
+    <!--    <div class="col-sm-6" style="margin-top: 40px">
             <h6>TEMPO PARA ATENDER SUAS SOLICITAÇÕES DE ORÇAMENTOS, CONSULTAS SOBRE PRODUTOS OU RESOLUÇÃO DE PENDÊNCIAS?</h6>
             <div id="chart-container">
                 <canvas id="graphCanvas4"></canvas>
@@ -67,7 +67,8 @@ body {
             </div>
         </div>
 
-
+    -->
+    
     </div>
     </div>
 
@@ -110,8 +111,8 @@ body {
                         datasets: [
                             {
                                 label: 'Dados Coletados',
-                                backgroundColor: '#49e2ff',
-                                borderColor: '#46d5f1',
+                                backgroundColor: 'dark',
+                                borderColor: 'dark',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
                                 data: [p1,p2,p3,p4,p5]
@@ -138,19 +139,19 @@ body {
                 {
                     console.log(data);
                         var name = ['Péssimo','Insatisfeito','Médio', 'Satisfeito', 'Muito Satisfeito'];
-                        var p1 = [];
-                        var p2 = [];
-                        var p3 = [];
-                        var p4 = [];
-                        var p5 = [];
+                        var p6 = [];
+                        var p7 = [];
+                        var p8 = [];
+                        var p9 = [];
+                        var p10 = [];
 
                     for (var i in data) {
                         //name.push(data[i].name);
-                        p1.push(data[i].p1);
-                        p2.push(data[i].p2);
-                        p3.push(data[i].p3);
-                        p4.push(data[i].p4);
-                        p5.push(data[i].p5);
+                        p6.push(data[i].p6);
+                        p7.push(data[i].p7);
+                        p8.push(data[i].p8);
+                        p9.push(data[i].p9);
+                        p10.push(data[i].p10);
 
                     }
 
@@ -159,11 +160,11 @@ body {
                         datasets: [
                             {
                                 label: 'Dados Coletados',
-                                backgroundColor: '#49e2ff',
-                                borderColor: '#46d5f1',
+                                backgroundColor: 'dark',
+                                borderColor: 'dark',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
-                                data: [p1,p2,p3,p4,p5]
+                                data: [p6,p7,p8,p9,p10]
                             }
                         ]                        
                     };
@@ -187,19 +188,19 @@ body {
                 {
                     console.log(data);
                         var name = ['Péssimo','Insatisfeito','Médio', 'Satisfeito', 'Muito Satisfeito'];
-                        var p1 = [];
-                        var p2 = [];
-                        var p3 = [];
-                        var p4 = [];
-                        var p5 = [];
+                        var p11 = [];
+                        var p12 = [];
+                        var p13 = [];
+                        var p14 = [];
+                        var p15 = [];
 
                     for (var i in data) {
                         //name.push(data[i].name);
-                        p1.push(data[i].p1);
-                        p2.push(data[i].p2);
-                        p3.push(data[i].p3);
-                        p4.push(data[i].p4);
-                        p5.push(data[i].p5);
+                        p11.push(data[i].p11);
+                        p12.push(data[i].p12);
+                        p13.push(data[i].p13);
+                        p14.push(data[i].p14);
+                        p15.push(data[i].p15);
 
                     }
 
@@ -208,11 +209,11 @@ body {
                         datasets: [
                             {
                                 label: 'Dados Coletados',
-                                backgroundColor: '#49e2ff',
-                                borderColor: '#46d5f1',
+                                backgroundColor: 'dark',
+                                borderColor: 'dark',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
-                                data: [p1,p2,p3,p4,p5]
+                                data: [p11,p12,p13,p14,p15]
                             }
                         ]                        
                     };
@@ -228,7 +229,7 @@ body {
             }
         }
 
-        function showGraph4()
+   /*     function showGraph4()
         {
             {
                 $.post("data4.php",
@@ -257,8 +258,8 @@ body {
                         datasets: [
                             {
                                 label: 'Dados Coletados',
-                                backgroundColor: '#49e2ff',
-                                borderColor: '#46d5f1',
+                                backgroundColor: 'dark',
+                                borderColor: 'dark',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
                                 data: [p1,p2,p3,p4,p5]
@@ -317,8 +318,8 @@ body {
                         datasets: [
                             {
                                 label: 'Dados Coletados',
-                                backgroundColor: '#49e2ff',
-                                borderColor: '#46d5f1',
+                                backgroundColor: 'dark',
+                                borderColor: 'dark',
                                 hoverBackgroundColor: '#CCCCCC',
                                 hoverBorderColor: '#666666',
                                 data: [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10]
@@ -335,7 +336,7 @@ body {
                     });
                 });
             }
-        }
+        }*/
         </script>
 
 </body>
